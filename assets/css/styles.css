@@ -714,6 +714,14 @@ a.social__link:hover {
   color: var(--charcoal-dark);
 }
 
+.footer__data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .footer__privacy {
   color: var(--indian-color);
   font-weight: var(--font-semi-bold);
@@ -724,7 +732,7 @@ a.social__link:hover {
 }
 
 .footer__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.3rem;
@@ -744,6 +752,12 @@ a.social__link:hover {
   max-width: 30px;
   aspect-ratio: 1/1;
   border-radius: 100%;
+}
+
+.medico22__instagram {
+  font-size: 2rem;
+  color: var(--logo-color);
+  transition: all 0.2s ease-in-out;
 }
 
 /*=============== SCROLL HORIZONTAL ===============*/
