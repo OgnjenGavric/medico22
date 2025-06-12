@@ -1,0 +1,39 @@
+{
+  "name": "Medico22",
+  "short_name": "Medico22",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#3b89ba",
+  "description": "Medico22 ist eine Praxis im Wiener Bezirk Donaustadt unter der Leitung von Dr. Lucija. Wir bieten Dienstleistungen für alle Krankenkassen und Privatpatienten an.",
+  "icons": [
+    {
+      "src": "./favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon-32x32.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./apple-touch-icon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon.ico",
+      "type": "image/png"
+    }
+  ]
+}
