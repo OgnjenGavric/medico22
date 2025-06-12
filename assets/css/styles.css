@@ -151,7 +151,7 @@
   justify-content: center;
   align-items: center;
   margin-inline: auto;
-  top: 0.5rem;
+  top: 0;
   left: 0;
   right: 0;
   background-color: var(--white-color);
