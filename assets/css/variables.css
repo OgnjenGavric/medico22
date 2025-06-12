@@ -321,12 +321,7 @@ img {
 
 .cookie__button-accept,
 .cookie__button-decline {
-  background-color: var(--light-blue-outline);
-  color: var(--white-97);
   padding: 1rem 1.25rem;
-  border: var(--border-height-3);
-  border-color: var(--light-blue-outline);
-  border-radius: 1rem;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
@@ -334,7 +329,6 @@ img {
 
 .cookie__button-decline {
   background-color: var(--white-97);
-  color: var(--light-blue-outline);
 }
 
 /*=============== BG - ABSTRACT ===============*/

@@ -211,6 +211,16 @@
   background-color: transparent;
 }
 
+.home__bg .home__bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
 .home__data {
   position: relative;
   z-index: var(--z-tooltip);
@@ -703,12 +713,37 @@ a.social__link:hover {
   text-align: center;
   color: var(--charcoal-dark);
 }
+
 .footer__privacy {
   color: var(--indian-color);
   font-weight: var(--font-semi-bold);
 }
+
 .footer__privacy:hover {
   color: var(--logo-color);
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem;
+  padding-right: 0.5rem;
+  background: var(--white-95);
+  border-radius: 4rem;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__link:hover {
+  border: 1px solid var(--indian-color);
+}
+
+.footer__img {
+  max-width: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
 }
 
 /*=============== SCROLL HORIZONTAL ===============*/
@@ -798,12 +833,14 @@ a.social__link:hover {
 .wrapper__cookie {
   right: -400px; /* hidden off-screen */
   opacity: 0;
+  display: none;
   pointer-events: none;
 }
 
 .wrapper__cookie.show {
+  display: block;
   position: fixed;
-  right: 1rem;
+  right: 0.5rem;
   opacity: 1;
   pointer-events: auto;
   bottom: 0.5rem;
