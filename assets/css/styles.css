@@ -150,7 +150,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0.5rem;
+  margin-inline: auto;
   top: 0;
   left: 0;
   right: 0;
@@ -755,6 +755,6 @@ a.social__link:hover {
     margin-inline: auto;
   }
   .header__container {
-    padding-block: 1rem;
+    padding: 1rem;
   }
 }
