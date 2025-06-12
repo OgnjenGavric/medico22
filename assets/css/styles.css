@@ -711,6 +711,90 @@ a.social__link:hover {
   color: var(--logo-color);
 }
 
+/*=============== SCROLL HORIZONTAL ===============*/
+.scroll__horizontal {
+  position: fixed;
+  top: 3.5rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    var(--light-blue-background) 10%,
+    var(--light-blue-background) 90%,
+    transparent
+  );
+  z-index: var(--z-fixed);
+}
+
+.scroll__horizontal div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  animation: scroll var(--time) linear infinite;
+  animation-delay: calc(var(--time) * -1);
+}
+
+.scroll__horizontal div span {
+  display: inline-flex;
+  border: var(--border-height-1);
+  border-radius: 0 0.5rem 0.5rem 0;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  background: var(--peach-pastel);
+  color: var(--charcoal-dark);
+  padding: 0.5rem 1rem;
+  transition: 0.5s;
+}
+
+.scroll__horizontal div span:hover {
+  background: var(--light-blue-outline);
+  cursor: pointer;
+}
+
+.scroll__horizontal div span:first-child {
+  background-color: var(--red-scroll);
+  color: var(--white-97);
+  border-radius: 0.5rem 0 0 0.5rem;
+  border-right: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--light-gray-bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--sky-blue-middle-pastel);
+  border-radius: 10px;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 @media screen and (max-width: 375px) {
@@ -756,5 +840,14 @@ a.social__link:hover {
   }
   .header__container {
     padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home__container {
+    padding-top: 6rem;
+  }
+  .scroll__horizontal {
+    top: 5rem;
   }
 }

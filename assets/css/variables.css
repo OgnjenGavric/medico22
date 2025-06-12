@@ -5,8 +5,8 @@
 :root {
   --header-height: 3.5rem;
   --border-section: 40px;
-  --border-height-3: 3px solid var(--charcoal-dark);
-  --border-height-2: 2px solid var(--charcoal-dark);
+  --border-height-3: 3px solid var(--arthelper-purple);
+  --border-height-2: 2px solid var(--arthelper-purple);
   --border-height-1: 1px solid var(--arthelper-purple);
 
   /*========== Colors ==========*/
@@ -61,7 +61,7 @@
 
   --arthelper-purple: #8a489c;
   --white-50-transparent: #ffffff80;
-  --red: #ff0000;
+  --red-scroll: #e63200;
   --black: #000;
   --white-90: #e6e6e6;
   --white-95: #f2f2f2;
