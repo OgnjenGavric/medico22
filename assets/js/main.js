@@ -80,3 +80,34 @@ const toggleItem = (item) => {
 		item.classList.add('accordion-open');
 	}
 };
+
+/*=============== COOKIES ===============*/
+document.addEventListener("DOMContentLoaded", () => {
+	const cookieBox = document.querySelector(".wrapper__cookie");
+	const acceptBtn = document.getElementById("acceptBtn");
+	const declineBtn = document.getElementById("declineBtn");
+
+	const showCookieBox = () => {
+		if (!document.cookie.includes("cookieBy=medico22")) {
+			cookieBox.classList.add("show");
+		}
+	};
+
+	const setCookie = (value) => {
+		// Set cookie for 30 days
+		document.cookie = `cookieBy=${value}; max-age=${60 * 60 * 24 * 30}; path=/`;
+	};
+
+	acceptBtn.addEventListener("click", () => {
+		setCookie("medico22");
+		cookieBox.classList.remove("show");
+	});
+
+	declineBtn.addEventListener("click", () => {
+		cookieBox.classList.remove("show");
+		// Optionally, set a different cookie to remember decline
+		// setCookie("declined");
+	});
+
+	showCookieBox();
+});

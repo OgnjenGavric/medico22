@@ -731,6 +731,26 @@ a.social__link:hover {
   z-index: var(--z-fixed);
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
 .scroll__horizontal div {
   display: flex;
   justify-content: center;
@@ -739,6 +759,14 @@ a.social__link:hover {
   white-space: nowrap;
   animation: scroll var(--time) linear infinite;
   animation-delay: calc(var(--time) * -1);
+}
+
+.scroll__horizontal div:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .scroll__horizontal div span {
@@ -765,24 +793,70 @@ a.social__link:hover {
   border-right: none;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
+/*=============== COOKIE ===============*/
 
-  100% {
-    transform: translateX(-100%);
-  }
+.wrapper__cookie {
+  right: -400px; /* hidden off-screen */
+  opacity: 0;
+  pointer-events: none;
 }
 
-@keyframes scroll2 {
-  0% {
-    transform: translateX(0);
-  }
+.wrapper__cookie.show {
+  position: fixed;
+  right: 1rem;
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 0.5rem;
+  max-width: 345px;
+  width: 100%;
+  background: var(--white-color);
+  border: var(--border-height-1);
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: var(--z-modal);
+  transition: all 0.3s ease;
+}
 
-  100% {
-    transform: translateX(-200%);
-  }
+.wrapper__cookie-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.wrapper__cookie-header i {
+  font-size: 32px;
+}
+
+.accordion__read-more {
+  color: var(--white-60);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+}
+
+.wrapper__cookie-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.wrapper__cookie .accordion__header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.wrapper__cookie .accordion__item {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.wrapper__cookie .accordion__description {
+  padding: 0;
 }
 
 /*=============== SCROLL BAR ===============*/
