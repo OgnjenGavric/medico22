@@ -4,7 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-  --border-section: 3rem;
+  --border-section: 40px;
   --border-height-3: 3px solid var(--charcoal-dark);
   --border-height-2: 2px solid var(--charcoal-dark);
   --border-height-1: 1px solid var(--arthelper-purple);
@@ -15,10 +15,6 @@
 
   --black-color: hsl(40, 14%, 14%);
   --body-color: hsl(36, 20%, 90%);
-
-  /* Original deep tones */
-  --indian-color: #ba5e62;
-  /* --logo-color: #a90029; */
 
   /* Neo brutalism core */
   --coral-orange: #fe5933;
@@ -45,6 +41,7 @@
 
   /*========== Colors Primary ==========*/
   --logo-color: #a90029;
+  --indian-color: #ba5e62;
   --white-color: #ffffff;
 
   /* Neobrutalism neutrals */
@@ -60,6 +57,8 @@
   --light-blue-background: #e5f7ff;
   --light-blue-backgroundu: #00aaff26;
   --light-purple-background: #8a489c1a;
+  --dark-grey-backgroundu: #02233dbf;
+
   --arthelper-purple: #8a489c;
   --white-50-transparent: #ffffff80;
   --red: #ff0000;
